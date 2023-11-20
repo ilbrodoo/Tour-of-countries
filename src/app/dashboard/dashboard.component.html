@@ -1,0 +1,6 @@
+<h2>Stati preferiti</h2>
+<div class="countries-menu">
+  <a *ngFor="let country of countries" routerLink="/detail/{{country.cca3}}" >
+    {{country.name.common}}
+  </a>
+</div>

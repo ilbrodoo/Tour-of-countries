@@ -1,0 +1,9 @@
+<h2>My Countries</h2>
+
+<ul class="countries">
+  <li *ngFor="let country of countries">
+    <a routerLink="/detail/{{country.cca3}}">
+      <span class="badge">{{country.cca3}}</span> {{country.name.common}}
+    </a>
+  </li>
+</ul>

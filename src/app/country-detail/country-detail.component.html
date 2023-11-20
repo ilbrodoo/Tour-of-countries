@@ -1,0 +1,11 @@
+
+
+<div *ngIf="country">
+    <h2>{{country.name.common | uppercase}} Details</h2>
+    <div>id: {{country.cca3}}</div>
+    <div>
+        <label for="country-name">Country name: </label>
+        <input id="country-name" [(ngModel)]="country.name.common" placeholder="name">
+    </div>
+</div>
+<button type="button" (click)="goBack()">go back</button>
